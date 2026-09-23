@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Tiêu đề chuẩn SEO (chứa từ khóa chính + thương hiệu) -->
+    <title>Đăng ký nhận thông tin - Blakletterpress</title>
+    
+    <!-- Thẻ mô tả chuẩn SEO -->
+    <meta name="description" content="Đăng ký nhận bản tin mới nhất từ Blakletterpress để cập nhật các tin tức, bài viết chuyên sâu và sự kiện nổi bật trong ngành." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://example.com/dang-ky.html" />
+
+    <!-- Open Graph (Hỗ trợ hiển thị khi chia sẻ Facebook/Zalo) -->
+    <meta property="og:title" content="Đăng ký nhận thông tin - Blakletterpress" />
+    <meta property="og:description" content="Cập nhật tin tức, sự kiện và bài viết hấp dẫn từ Blakletterpress." />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div id="page">
+      <!-- HEADER CHUẨN NGỮ NGHĨA -->
+      <header id="header">
+        <div id="motto">
+          <a href="index.html" class="sitename">
+            <img
+              src="images/blakletterpress.png"
+              height="24"
+              width="142"
+              alt="Blakletterpress Trang chủ"
+            />
+          </a>
+          <p>
+            <img
+              src="images/header-text.png"
+              height="14"
+              width="218"
+              alt="Khẩu hiệu Blakletterpress"
+            />
+          </p>
+        </div>
+
+        <div id="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Logo chính thức Blakletterpress" />
+          </a>
+        </div>
+
+        <div id="searchbar">
+          <!-- Sử dụng HTML5 search input hiện đại, không dùng JS inline -->
+          <form action="/search" method="get" role="search">
+            <label for="search-input" class="visually-hidden" style="position: absolute; left: -9999px;">Tìm kiếm trên trang</label>
+            <input
+              type="search"
+              id="search-input"
+              name="q"
+              placeholder="Nhập từ khóa tìm kiếm..."
+              class="txtfield"
+              required
+            />
+            <button type="submit" class="btn">Tìm kiếm</button>
+          </form>
+        </div>
+      </header>
+
+      <div id="contents">
+        <!-- VÙNG NỘI DUNG CHÍNH (MAIN) -->
+        <main id="main">
+          <!-- H1 DUY NHẤT TRÊN TRANG CHO SEO -->
+          <h1>Đăng ký nhận thông tin</h1>
+          <p>
+            Điền thông tin bên dưới để đăng ký nhận tin. Các trường có dấu <strong>*</strong> là bắt buộc!
+          </p>
+
+          <form action="#" method="post" novalidate>
+            <!-- Fieldset 1 -->
+            <fieldset class="form-section">
+              <legend>Thông tin tài khoản</legend>
+
+              <div class="form-group">
+                <label for="fullname">Họ và tên *</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Nguyễn Văn A"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ban@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="password">Mật khẩu * (tối thiểu 8 ký tự)</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  minlength="8"
+                  autocomplete="new-password"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Số điện thoại * (10 số, bắt đầu bằng 0)</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="0[0-9]{9}"
+                  placeholder="0912345678"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+            </fieldset>
+
+            <!-- Fieldset 2 -->
+            <fieldset class="form-section">
+              <legend>Thông tin cá nhân</legend>
+
+              <div class="form-group">
+                <label for="birthday">Ngày sinh *</label>
+                <input type="date" id="birthday" name="birthday" required />
+              </div>
+
+              <div class="form-group">
+                <label for="age">Độ tuổi *</label>
+                <input type="number" id="age" name="age" min="1" max="120" required />
+              </div>
+
+              <div class="form-group">
+                <span class="label-group-title">Giới tính *</span>
+                <div>
+                  <input type="radio" id="male" name="gender" value="male" required />
+                  <label for="male">Nam</label>
+
+                  <input type="radio" id="female" name="gender" value="female" />
+                  <label for="female">Nữ</label>
+
+                  <input type="radio" id="other" name="gender" value="other" />
+                  <label for="other">Khác</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Fieldset 3 -->
+            <fieldset class="form-section">
+              <legend>Tùy chọn nhận tin</legend>
+
+              <p class="label-group-title">Chủ đề bạn quan tâm?</p>
+              <div class="checkbox-group">
+                <label>
+                  <input type="checkbox" name="topic[]" value="news" />
+                  Tin tức
+                </label>
+                <label>
+                  <input type="checkbox" name="topic[]" value="blogs" />
+                  Blogs
+                </label>
+                <label>
+                  <input type="checkbox" name="topic[]" value="events" />
+                  Sự kiện
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="region">Chọn khu vực</label>
+                <select id="region" name="region">
+                  <option value="" disabled selected>-- Chọn khu vực --</option>
+                  <option value="HaNoi">Hà Nội</option>
+                  <option value="BacNinh">Bắc Ninh</option>
+                  <option value="ThanhHoa">Thanh Hóa</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="comment">Lời nhắn</label>
+                <textarea
+                  id="comment"
+                  name="comment"
+                  rows="5"
+                  cols="40"
+                  placeholder="Nhập lời nhắn hoặc thắc mắc của bạn..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="terms" required />
+                  Tôi đồng ý với <a href="terms.html" target="_blank" rel="noopener">điều khoản dịch vụ</a>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Đăng ký ngay</button>
+              <button type="reset">Nhập lại</button>
+            </div>
+          </form>
+        </main>
+
+        <!-- THANH BÊN (ASIDE) -->
+        <aside id="sidebar">
+          <nav id="navigation" aria-label="Menu chính">
+            <div>
+              <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <section class="section" id="connect">
+            <h2>Kết nối với chúng tôi</h2>
+            <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer" class="twitter" aria-label="Theo dõi qua Twitter"></a>
+            <a href="https://facebook.com/example" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Theo dõi qua Facebook"></a>
+          </section>
+
+          <section class="section" id="posts">
+            <h2>Bài viết nổi bật</h2>
+            <ul>
+              <li>
+                <h3>Tiêu đề bài viết nổi bật 1</h3>
+                <p>Khám phá công nghệ in ấn và truyền thông số mới nhất của năm...</p>
+                <a href="news-detail.html" class="more">Xem chi tiết</a>
+              </li>
+              <li>
+                <h3>Tiêu đề bài viết nổi bật 2</h3>
+                <p>Chiến lược tiếp thị nội dung đột phá dành cho các doanh nghiệp vừa và nhỏ...</p>
+                <a href="news-detail.html" class="more">Xem chi tiết</a>
+              </li>
+            </ul>
+            <a href="news.html" class="btn2">Xem tất cả bài viết</a>
+          </section>
+        </aside>
+      </div>
+
+      <!-- CHÂN TRANG (FOOTER) -->
+      <footer id="footer">
+        <div>
+          <ul id="featured">
+            <li>
+              <a href="index.html" class="home" aria-label="Về trang chủ"></a>
+              <p>Cam kết mang đến giải pháp truyền thông và bản in chất lượng cao nhất cho doanh nghiệp.</p>
+            </li>
+            <li>
+              <a href="index.html" class="bell" aria-label="Nhận thông báo"></a>
+              <p>Hệ thống thông báo tự động cập nhật nhanh chóng các sự kiện quan trọng trong tuần.</p>
+            </li>
+            <li>
+              <a href="index.html" class="globe" aria-label="Phạm vi toàn cầu"></a>
+              <p>Mạng lưới kết nối mở rộng nhiều khu vực, hỗ trợ đa nền tảng linh hoạt.</p>
+            </li>
+            <li>
+              <a href="index.html" class="pencil" aria-label="Biên tập nội dung"></a>
+              <p>Nội dung được kiểm duyệt và biên soạn bởi đội ngũ chuyên gia giàu kinh nghiệm.</p>
+            </li>
+          </ul>
+          <p id="footnote">
+            © 2026 Blakletterpress. Bản quyền đã được bảo hộ.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
